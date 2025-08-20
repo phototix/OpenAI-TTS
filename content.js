@@ -339,7 +339,7 @@
                 <div id="tts-text" style="flex: 1; overflow-y: auto; border: 1px solid #e2e8f0; padding: 12px; border-radius: 6px; color:black; background: #f7fafc; font-size: 14px; line-height: 1.5; max-height: 200px;"></div>
                 <div style="margin-top: 15px; display: flex; gap: 8px;">
                     <button id="tts-pause" style="flex: 1; padding: 8px; background: #10a37f; color: white; border: none; border-radius: 4px; cursor: pointer;">Pause</button>
-                    <button id="tts-next" style="flex: 1; padding: 8px; background: #f59e0b; color: white; border: none; border-radius: 4px; cursor: pointer;">Next Sentence</button>
+                    <button id="tts-next" style="display:none; flex: 1; padding: 8px; background: #f59e0b; color: white; border: none; border-radius: 4px; cursor: pointer;">Next Sentence</button>
                     <button id="tts-stop" style="flex: 1; padding: 8px; background: #e53e3e; color: white; border: none; border-radius: 4px; cursor: pointer;">Stop</button>
                 </div>
             `;
