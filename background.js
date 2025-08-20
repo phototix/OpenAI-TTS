@@ -26,19 +26,6 @@ async function handleReadAloudRequest(tab, text) {
             // Ignore errors if content script isn't available
         });
         
-        // Check if we've already injected into this tab
-        if (!injectedTabs.has(tab.id)) {
-            // Inject content script
-            await chrome.scripting.executeScript({
-                target: { tabId: tab.id },
-                files: ['content.js']
-            });
-            injectedTabs.add(tab.id);
-            
-            // Wait a bit for the content script to initialize
-            await new Promise(resolve => setTimeout(resolve, 100));
-        }
-        
         // Send message to content script
         await chrome.tabs.sendMessage(tab.id, {
             action: "readAloud",
